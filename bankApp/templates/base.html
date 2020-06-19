@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    <link rel="stylesheet" href="../static/css/bank.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/css/bootstrap.min.css" integrity="sha384-HSMxcRTRxnN+Bdg0JdbxYKrThecOKuH5zCYotlSAcp1+c8xmyTe9GYg1l9a69psu" crossorigin="anonymous">
+    <title></title>
+  </head>
+
+
+  <body>
+    
+    <div class="container">
+      <h1 style="margin:0px; padding:20px; background-color:skyblue;">FedChoice Bank</h1>
+
+    <nav class="navbar">
+  <div class="container">
+    <!-- Brand and toggle get grouped for better mobile display -->
+
+    <!-- Collect the nav links, forms, and other content for toggling -->
+    <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+      <ul class="nav navbar-nav">
+        <li class="active"><a href="/home">Home</a><span class="sr-only">(current)</span></a></li>
+        <li class="dropdown">
+          <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Customer Management<span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li><a href="/createcustomer">Create Customer</a></li>
+            <li><a href="/edit">Update Customer</a></li>
+            <li><a href="/delete">Delete Customer</a></li>
+            <li><a href="/searchcustomer">Search Customer</a></li>
+            <li role="separator" class="divider"></li>
+          </ul>
+        </li>
+      </ul>
+
+      <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+        <ul class="nav navbar-nav">
+          <li class="dropdown">
+            <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Account Management<span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="/createaccount">Create Account</a></li>
+              <li><a href="/deleteaccount">Delete Account</a></li>
+              <li><a href="/searchaccount">Search Account</a></li>
+              <li role="separator" class="divider"></li>
+            </ul>
+          </li>
+        </ul>
+
+        <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+          <ul class="nav navbar-nav">
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Status Details<span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li><a href="/customer_status">Customer Status</a></li>
+                <li><a href="/account_status">Account Status</a></li>
+                <li role="separator" class="divider"></li>
+              </ul>
+            </li>
+          </ul>
+
+          <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
+            <ul class="nav navbar-nav">
+              <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">Account Operations<span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li><a href="/deposit">Deposit</a></li>
+                  <li><a href="/withdraw">Withdraw</a></li>
+                  <li><a href="/transfer">Transfer Amount</a></li>
+                  <li><a href="/statement">Statement</a></li>
+                  <li role="separator" class="divider"></li>
+                </ul>
+              </li>
+            </ul>
+
+      <ul class="nav navbar-nav">
+        <li><a href="/logout">Logout</a></li>
+      </ul>
+    </div><!-- /.navbar-collapse -->
+  </div><!-- /.container-fluid -->
+</nav>
+{% block body %}
+{% endblock %}
+</div>
+
+
+
+
+
+
+
+<script type="text/javascript" src="../static/js/bank.js"></script>
+   <script src="https://code.jquery.com/jquery-3.4.1.slim.min.js" integrity="sha384-J6qa4849blE2+poT4WnyKhv5vZF5SrPo0iEjwBvKU7imGFAV0wwj1yYfoRSJoZ+n" crossorigin="anonymous"></script>
+
+   <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js" integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6" crossorigin="anonymous"></script>
+  </body>
+</html>

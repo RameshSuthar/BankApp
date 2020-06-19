@@ -1,0 +1,42 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<form class="" action="/searchcustomer" method="POST">
+
+  <table border='0' width='480px' cellpadding='0' cellspacing='0' align='center'>
+<center><tr>
+   <td><h1 id="hhh">Search Customer</h1></td>
+</tr><center>
+
+<table border='0' width='480px' cellpadding='0' cellspacing='0' align='center'>
+<tr>
+    <td align='left' class="control-label" for="cid" >Customer SSN id<span class="required">*</span></td>
+<td><input type="text" id="cid" name="ssnid" required="required" class="form-control"></td>
+</tr>
+<tr> <td>&nbsp;</td> </tr>
+
+<tr>
+  <td align='center'><h6 id="col">(*) Fields are compulsory</h6></td>
+</tr>
+<tr> <td>&nbsp;</td> </tr>
+
+{% if error %}
+    <table border='0' cellpadding='0' cellspacing='0' width='480px' align='center'>
+    <tr>
+        <td style="color:red">{{ error }}</td>
+    </tr>
+    </table> 
+    <tr> <td>&nbsp;</td> </tr>
+{% endif %}
+
+<table border='0' cellpadding='0' cellspacing='0' width='200px' align='center'>
+<tr>
+    <td align='center'><input class="button button2" type='submit' name='sub' value="Submit"></td>
+</tr>
+<tr> <td>&nbsp;</td> </tr>
+</table>
+</table>
+</table>
+</form>
+
+{% endblock %}

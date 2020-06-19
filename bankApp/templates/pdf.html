@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+  <head>
+    <meta charset="utf-8">
+    
+  </head>
+<style>
+
+  #customers {
+    border-collapse: collapse;
+    width: 100%;
+  }
+  
+  #customers td, #customers th {
+    border: 1px solid #ddd;
+    padding: 8px;
+  }
+  
+  #customers tr:nth-child(even){background-color: #f2f2f2;}
+  
+  #customers tr:hover {background-color: #ddd;}
+  
+  #customers th {
+    padding-top: 12px;
+    padding-bottom: 12px;
+    text-align: center;
+    background-color: #4CAF50;
+    color: white;
+  }
+  #customers td {
+    text-align: center;
+    color: black;
+  }
+
+  #hhh{
+    margin-bottom: 50px;
+    color: red;
+    text-align: center;
+  }
+</style>
+<body>
+
+
+<td><h1 id="hhh">Account Statement</h1></td>
+
+<table id="customers">
+  <tr>
+    <th>Customer SSN id</th>
+    <th>Account id</th>
+    <th>Transaction id</th>
+    <th>Description</th>
+    <th>Date(YYYY-MM-DD)</th>
+    <th>Amount</th>
+  </tr>
+  {% for transaction in transactions %}
+  <tr>
+    <td>{{ transaction.ssnid }}</td>
+    <td>{{ transaction.account_id }}</td>
+    <td>{{ transaction.id }}</td>
+    <td>{{ transaction.message }}</td>
+    <td>{{ transaction.date_created.strftime('%Y/%m/%d %H:%M:%S %Z') }}</td>
+    <td>{{ transaction.amount }}</td>
+  </tr>
+  {% endfor %}
+  <table border='0' cellpadding='0' cellspacing='0' width='400px' align='center'>
+    <tr> <td>&nbsp;</td> </tr>
+    <tr> <td>&nbsp;</td> </tr>
+ 
+  <tr> <td>&nbsp;</td> </tr>
+  </table>
+</table>
+</div>
+
+
+</body>
+</html>

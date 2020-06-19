@@ -1,0 +1,27 @@
+{% extends 'base.html' %}
+
+{% block body %}
+<td><h1 id="hhh">Customer Status</h1></td>
+
+<table id="customers">
+  <tr>
+    <th>Customer SSN id</th>
+    <th>Status</th>
+    <th>Message</th>
+    <th>Last Updated</th>
+    <th>Operations</th>
+    <th>View Profile</th>
+  </tr>
+  {% for customer in customers %}
+  <tr>
+    <td>{{ customer.id }}</td>
+    <td>{{ customer.status }}</td>
+    <td>{{ customer.message }}</td>
+    <td>{{ customer.date_created.strftime('%m/%d/%Y %H:%M:%S %Z') }}</td>
+    <td><a href="/customer_status">Refresh</a></td>
+    <td><a href="/status_of_individual_customer/{{ customer.id }}">ViewDetails</a></td>
+  </tr>
+  {% endfor %}
+</table>
+
+{% endblock %}

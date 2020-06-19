@@ -1,0 +1,23 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+{% if account %}
+
+<div align="center">
+    <h4>{{ account.message }}</h4>
+    Customer SSNID: <h4>{{ account.ssnid }}</h4>
+    Account ID: <h4>{{ account.id }}</h4>
+    Account Type: <h4>{{ account.account_type }}</h4>
+    Remaining Balance: <h4>{{ account.amount }}</h4>
+    <a class="button button2 design_for_a" href="/home">Home</a>
+</div>
+{% endif %}
+
+{% if message %}
+<div align="center">
+    <h4>{{ message }}</h4>
+    <a class="button button2 design_for_a" href="/home">Home</a>
+</div>
+{% endif %}
+{% endblock %}

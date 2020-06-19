@@ -1,0 +1,41 @@
+{% extends 'base.html' %}
+
+{% block body %}
+
+{% if accounts %}
+
+<h1 class="header">Account Status</h1>
+
+<table id="customers">
+  <tr>
+    <th>Customer SSN id</th>
+    <th>Account ID</th>
+    <th>Account Type</th>
+    <th>Account Status</th>
+    <th>Message</th>
+    <th>Last Updated</th>
+    <th>Operations</th>
+  </tr>
+  {% for account in accounts %}
+  <tr>
+    <td>{{ account.ssnid }}</td>
+    <td>{{ account.id }}</td>
+    <td>{{ account.account_type }}</td>
+    <td>{{ account.status }}</td>
+    <td>{{ account.message }}</td>
+    <td>{{ account.date_created.strftime('%m/%d/%Y %H:%M:%S %Z') }}</td>
+    <td><a href="/account_status">Refresh</a></td>
+  </tr>
+  {% endfor %}
+</table>
+{% endif %}
+
+{% if error %}
+<div align="center">
+  <h2>{{ error }}</h2>
+</div>
+{% endif %}
+
+{% endblock %}
+
+

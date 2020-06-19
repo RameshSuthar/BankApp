@@ -1,0 +1,144 @@
+body{
+  height: 100%;
+  padding: 0px;
+  margin: 0px;
+}
+#main_page{
+  padding-left: 40px;
+  padding-top: 60px;
+  padding-right: 40px;
+}
+.container .jumbotron{
+  padding-right: 15px;
+  padding-left: 15px;
+  border-radius: 6px;
+  background:#35d112;
+  color:white;
+}
+.navbar {
+  color:blue ;
+  background: yellow;
+}
+.required
+{
+    color: red;
+}
+#col{
+  color: red;
+}
+#hhh{
+  margin-bottom: 50px;
+  color: red;
+  text-align: center;
+}
+.header{
+  margin-bottom: 10px;
+  color: red;
+  text-align: center;
+}
+.footer{
+  background:#303036;
+  color:#d3d3d3;
+  height: 400px;
+  position: relative;
+}
+.footer .footer-bottom{
+  background: #343a40;
+  color:#686868;
+  height: 50px;
+  width: 100%;
+  text-align:left;
+  position: absolute;
+  bottom: 0px;
+  left: 0px;
+  padding-top: 20px;
+}
+.footer .footer-content{
+  height: 350px;
+  display: flex;
+}
+.footer .footer-content .footer-section{
+  flex:1;
+  padding: 25px;
+}
+
+#customers {
+  border-collapse: collapse;
+  width: 100%;
+}
+
+#customers td, #customers th {
+  border: 1px solid #ddd;
+  padding: 8px;
+}
+
+#customers tr:nth-child(even){background-color: #f2f2f2;}
+
+#customers tr:hover {background-color: #ddd;}
+
+#customers th {
+  padding-top: 12px;
+  padding-bottom: 12px;
+  text-align: center;
+  background-color: #4CAF50;
+  color: white;
+}
+#customers td {
+  text-align: center;
+  color: black;
+}
+
+.flex-container {
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.flex-container > div {
+  width: 400px;
+  height:400px;
+  text-align: center;
+  line-height: 75px;
+  font-size: 30px;
+  flex-direction: row;
+}
+
+.button {
+  background-color: #4CAF50; 
+  border: none;
+  color: white;
+  padding: 8px 8px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+.button2 {
+  background-color: white; 
+  color: black; 
+  border: 2px solid #008CBA;
+}
+
+.button2:hover {
+  background-color: #008CBA;
+  color: white;
+}
+
+.design_for_a{
+  text-decoration: none !important; 
+}
+
+.ssm{
+  width: 400px;
+  height: 400px;
+}
+
+.tagline{
+  display: block;
+  color: #62b5fc; 
+  font-size: 50px; 
+  font-family: sans-serif; 
+  font-weight: bold;
+}

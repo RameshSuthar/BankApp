@@ -1,0 +1,44 @@
+{% extends 'base.html' %}
+{% block body %}
+
+  <table border='0' width='480px' cellpadding='0' cellspacing='0' align='center'>
+<center><tr>
+   <td><h1 id="hhh">Account Details</h1></td>
+</tr><center>
+
+<table border='0' width='480px' cellpadding='0' cellspacing='0' align='center'>
+<tr>
+      <td align='left' class="control-label" >Account ID</td>
+<td>{{account.id}}</td>
+</tr>
+<tr> <td>&nbsp;</td> </tr>
+
+<tr>
+    <td align='left' class="control-label" >Customer SSNID ID</td>
+<td>{{account.ssnid}}</td>
+</tr>
+<tr> <td>&nbsp;</td> </tr>
+
+<tr>
+  <td align='left' class="control-label" >Account Type</td>
+<td>{{account.account_type}}</td>
+</tr>
+<tr> <td>&nbsp;</td> </tr>
+
+<tr>
+<td align='left' class="control-label" >Balance</td>
+<td>{{account.amount}}</td>
+</tr>
+<tr> <td>&nbsp;</td> </tr>
+
+
+<table border='0' cellpadding='0' cellspacing='0' width='200px' align='center'>
+<tr>
+    <td align='center'><a class="button button2 design_for_a" href="/searchaccount">Go Back</a></td>
+</tr>
+</table>
+</table>
+</table>
+<br>
+<br>
+{% endblock %}
